@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RocketListCollectionViewCell" id="gTV-IL-0wX" customClass="RocketListCollectionViewCell" customModule="PortalGroupCase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="347"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="232" height="347"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csc-zK-oED">
+                        <rect key="frame" x="0.0" y="0.0" width="232" height="347"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocketImage" translatesAutoresizingMaskIntoConstraints="NO" id="u07-p6-fiu">
+                                <rect key="frame" x="12" y="12" width="208" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u07-p6-fiu" secondAttribute="height" multiplier="104:89" id="HsR-dk-lhg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="İphone 13 Pro Max 256GB" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkG-dV-MOs">
+                                <rect key="frame" x="12" y="223" width="208" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnT-QP-Xty">
+                                <rect key="frame" x="12" y="299.66666666666669" width="208" height="35.333333333333314"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add to Cart"/>
+                                <connections>
+                                    <action selector="tappedAddToBasketButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Dw3-s9-rnv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="100000₺" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chy-Wc-AzB">
+                                <rect key="frame" x="12" y="198" width="208" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-Uo-dSi">
+                                <rect key="frame" x="12.000000000000004" y="270" width="40.333333333333343" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TnT-QP-Xty" firstAttribute="leading" secondItem="Csc-zK-oED" secondAttribute="leading" constant="12" id="3zM-ic-jhO"/>
+                            <constraint firstItem="Chy-Wc-AzB" firstAttribute="top" secondItem="u07-p6-fiu" secondAttribute="bottom" constant="8" id="4Xb-FX-yCH"/>
+                            <constraint firstAttribute="trailing" secondItem="u07-p6-fiu" secondAttribute="trailing" constant="12" id="864-Lp-Hcq"/>
+                            <constraint firstItem="RkG-dV-MOs" firstAttribute="leading" secondItem="Csc-zK-oED" secondAttribute="leading" constant="12" id="AFf-Ke-idE"/>
+                            <constraint firstItem="TnT-QP-Xty" firstAttribute="top" secondItem="s2X-Uo-dSi" secondAttribute="bottom" constant="8" id="EJd-Uy-XMc"/>
+                            <constraint firstItem="Chy-Wc-AzB" firstAttribute="leading" secondItem="Csc-zK-oED" secondAttribute="leading" constant="12" id="Gh7-mw-lyS"/>
+                            <constraint firstItem="u07-p6-fiu" firstAttribute="leading" secondItem="Csc-zK-oED" secondAttribute="leading" constant="12" id="Lg1-wd-4eo"/>
+                            <constraint firstItem="s2X-Uo-dSi" firstAttribute="leading" secondItem="Csc-zK-oED" secondAttribute="leading" constant="12" id="PBB-07-P13"/>
+                            <constraint firstItem="s2X-Uo-dSi" firstAttribute="top" secondItem="RkG-dV-MOs" secondAttribute="bottom" constant="4" id="PTl-fQ-Vt1"/>
+                            <constraint firstItem="u07-p6-fiu" firstAttribute="top" secondItem="Csc-zK-oED" secondAttribute="top" constant="12" id="VZB-gB-70i"/>
+                            <constraint firstAttribute="trailing" secondItem="RkG-dV-MOs" secondAttribute="trailing" constant="12" id="b0W-74-6H5"/>
+                            <constraint firstAttribute="bottom" secondItem="TnT-QP-Xty" secondAttribute="bottom" constant="12" id="bRc-Tj-tIY"/>
+                            <constraint firstAttribute="trailing" secondItem="Chy-Wc-AzB" secondAttribute="trailing" constant="12" id="uqg-kM-P1w"/>
+                            <constraint firstAttribute="trailing" secondItem="TnT-QP-Xty" secondAttribute="trailing" constant="12" id="vZ6-Gs-ZSV"/>
+                            <constraint firstItem="RkG-dV-MOs" firstAttribute="top" secondItem="Chy-Wc-AzB" secondAttribute="bottom" constant="4" id="y8G-yG-lxd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Csc-zK-oED" secondAttribute="bottom" id="6Wt-3a-4kf"/>
+                <constraint firstAttribute="trailing" secondItem="Csc-zK-oED" secondAttribute="trailing" id="Iwt-jX-izJ"/>
+                <constraint firstItem="Csc-zK-oED" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SUs-oN-AgW"/>
+                <constraint firstItem="Csc-zK-oED" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yrw-K6-lew"/>
+            </constraints>
+            <size key="customSize" width="232" height="347"/>
+            <connections>
+                <outlet property="addToBasketButton" destination="TnT-QP-Xty" id="J53-TR-ry3"/>
+                <outlet property="launchYearLabel" destination="s2X-Uo-dSi" id="rVZ-0N-1Ud"/>
+                <outlet property="priceLabel" destination="Chy-Wc-AzB" id="Yyh-wk-Wdf"/>
+                <outlet property="rocketImageView" destination="u07-p6-fiu" id="zmg-Bw-klh"/>
+                <outlet property="rocketNameLabel" destination="RkG-dV-MOs" id="Ibm-te-R9t"/>
+            </connections>
+            <point key="canvasLocation" x="276.3358778625954" y="124.29577464788733"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="rocketImage" width="460" height="626"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
